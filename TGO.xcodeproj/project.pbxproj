@@ -11,19 +11,67 @@
 		B35930F72993F9CE0050B1F3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35930F62993F9CE0050B1F3 /* SceneDelegate.swift */; };
 		B35930F92993F9CE0050B1F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35930F82993F9CE0050B1F3 /* ViewController.swift */; };
 		B35930FC2993F9CE0050B1F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B35930FA2993F9CE0050B1F3 /* Main.storyboard */; };
-		B35930FE2993F9CE0050B1F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B35930FD2993F9CE0050B1F3 /* Assets.xcassets */; };
 		B35931012993F9CE0050B1F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B35930FF2993F9CE0050B1F3 /* LaunchScreen.storyboard */; };
+		B35931092993FA090050B1F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B35931082993FA090050B1F3 /* Assets.xcassets */; };
+		B359310D2993FA1A0050B1F3 /* AuthSettings.plist in Resources */ = {isa = PBXBuildFile; fileRef = B359310A2993FA1A0050B1F3 /* AuthSettings.plist */; };
+		B359310E2993FA1A0050B1F3 /* ExampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B359310B2993FA1A0050B1F3 /* ExampleData.swift */; };
+		B359310F2993FA1A0050B1F3 /* data-dummy.json in Resources */ = {isa = PBXBuildFile; fileRef = B359310C2993FA1A0050B1F3 /* data-dummy.json */; };
+		B359312C2993FA230050B1F3 /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35931122993FA230050B1F3 /* SidebarView.swift */; };
+		B359312D2993FA230050B1F3 /* SidebarContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35931142993FA230050B1F3 /* SidebarContent.swift */; };
+		B359312E2993FA230050B1F3 /* SidebarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35931152993FA230050B1F3 /* SidebarButton.swift */; };
+		B359312F2993FA230050B1F3 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35931162993FA230050B1F3 /* HeaderView.swift */; };
+		B35931302993FA230050B1F3 /* ThemeEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35931182993FA230050B1F3 /* ThemeEvent.swift */; };
+		B35931312993FA230050B1F3 /* CalendarEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = B359311A2993FA230050B1F3 /* CalendarEvents.swift */; };
+		B35931322993FA230050B1F3 /* DropCalendarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B359311C2993FA230050B1F3 /* DropCalendarDelegate.swift */; };
+		B35931332993FA230050B1F3 /* CalendarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B359311D2993FA230050B1F3 /* CalendarManager.swift */; };
+		B35931342993FA230050B1F3 /* SidebarNavigationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B359311E2993FA230050B1F3 /* SidebarNavigationManager.swift */; };
+		B35931352993FA230050B1F3 /* PDV.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35931202993FA230050B1F3 /* PDV.swift */; };
+		B35931362993FA230050B1F3 /* PDVWidgetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35931212993FA230050B1F3 /* PDVWidgetManager.swift */; };
+		B35931372993FA230050B1F3 /* DropPDVDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35931222993FA230050B1F3 /* DropPDVDelegate.swift */; };
+		B35931382993FA230050B1F3 /* StringProtocolExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35931242993FA230050B1F3 /* StringProtocolExtension.swift */; };
+		B35931392993FA230050B1F3 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35931252993FA230050B1F3 /* UIViewControllerExtension.swift */; };
+		B359313A2993FA230050B1F3 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35931262993FA230050B1F3 /* UIViewExtension.swift */; };
+		B359313B2993FA230050B1F3 /* NotificationPaneManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35931272993FA230050B1F3 /* NotificationPaneManager.swift */; };
+		B359313C2993FA230050B1F3 /* GraphManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35931292993FA230050B1F3 /* GraphManager.swift */; };
+		B359313D2993FA230050B1F3 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B359312A2993FA230050B1F3 /* AuthenticationManager.swift */; };
+		B359313E2993FA230050B1F3 /* MicrosoftLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B359312B2993FA230050B1F3 /* MicrosoftLoginController.swift */; };
+		F7E7004E05C35C785AB75A2C /* Pods_TGO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB06D5DE57F738734C78C5C5 /* Pods_TGO.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		85FBDD1A7FF99E5C64FA3D53 /* Pods-TGO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TGO.release.xcconfig"; path = "Target Support Files/Pods-TGO/Pods-TGO.release.xcconfig"; sourceTree = "<group>"; };
 		B35930F12993F9CE0050B1F3 /* TGO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TGO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B35930F42993F9CE0050B1F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B35930F62993F9CE0050B1F3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B35930F82993F9CE0050B1F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B35930FB2993F9CE0050B1F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B35930FD2993F9CE0050B1F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B35931002993F9CE0050B1F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B35931022993F9CE0050B1F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B35931082993FA090050B1F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B359310A2993FA1A0050B1F3 /* AuthSettings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AuthSettings.plist; sourceTree = "<group>"; };
+		B359310B2993FA1A0050B1F3 /* ExampleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleData.swift; sourceTree = "<group>"; };
+		B359310C2993FA1A0050B1F3 /* data-dummy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "data-dummy.json"; sourceTree = "<group>"; };
+		B35931122993FA230050B1F3 /* SidebarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
+		B35931142993FA230050B1F3 /* SidebarContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SidebarContent.swift; sourceTree = "<group>"; };
+		B35931152993FA230050B1F3 /* SidebarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SidebarButton.swift; sourceTree = "<group>"; };
+		B35931162993FA230050B1F3 /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		B35931182993FA230050B1F3 /* ThemeEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeEvent.swift; sourceTree = "<group>"; };
+		B359311A2993FA230050B1F3 /* CalendarEvents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarEvents.swift; sourceTree = "<group>"; };
+		B359311C2993FA230050B1F3 /* DropCalendarDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropCalendarDelegate.swift; sourceTree = "<group>"; };
+		B359311D2993FA230050B1F3 /* CalendarManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarManager.swift; sourceTree = "<group>"; };
+		B359311E2993FA230050B1F3 /* SidebarNavigationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SidebarNavigationManager.swift; sourceTree = "<group>"; };
+		B35931202993FA230050B1F3 /* PDV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDV.swift; sourceTree = "<group>"; };
+		B35931212993FA230050B1F3 /* PDVWidgetManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDVWidgetManager.swift; sourceTree = "<group>"; };
+		B35931222993FA230050B1F3 /* DropPDVDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropPDVDelegate.swift; sourceTree = "<group>"; };
+		B35931242993FA230050B1F3 /* StringProtocolExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringProtocolExtension.swift; sourceTree = "<group>"; };
+		B35931252993FA230050B1F3 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		B35931262993FA230050B1F3 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		B35931272993FA230050B1F3 /* NotificationPaneManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationPaneManager.swift; sourceTree = "<group>"; };
+		B35931292993FA230050B1F3 /* GraphManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphManager.swift; sourceTree = "<group>"; };
+		B359312A2993FA230050B1F3 /* AuthenticationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
+		B359312B2993FA230050B1F3 /* MicrosoftLoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MicrosoftLoginController.swift; sourceTree = "<group>"; };
+		C31EF0446D9CD837034AB7D6 /* Pods-TGO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TGO.debug.xcconfig"; path = "Target Support Files/Pods-TGO/Pods-TGO.debug.xcconfig"; sourceTree = "<group>"; };
+		CB06D5DE57F738734C78C5C5 /* Pods_TGO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TGO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +79,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7E7004E05C35C785AB75A2C /* Pods_TGO.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A91A27A6BE3403A656566FC7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CB06D5DE57F738734C78C5C5 /* Pods_TGO.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B35930E82993F9CE0050B1F3 = {
 			isa = PBXGroup;
 			children = (
 				B35930F32993F9CE0050B1F3 /* TGO */,
 				B35930F22993F9CE0050B1F3 /* Products */,
+				CB8C622C0879ECE06A89974E /* Pods */,
+				A91A27A6BE3403A656566FC7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +115,118 @@
 		B35930F32993F9CE0050B1F3 /* TGO */ = {
 			isa = PBXGroup;
 			children = (
+				B359310C2993FA1A0050B1F3 /* data-dummy.json */,
+				B359310A2993FA1A0050B1F3 /* AuthSettings.plist */,
+				B35931022993F9CE0050B1F3 /* Info.plist */,
 				B35930F42993F9CE0050B1F3 /* AppDelegate.swift */,
+				B359310B2993FA1A0050B1F3 /* ExampleData.swift */,
 				B35930F62993F9CE0050B1F3 /* SceneDelegate.swift */,
 				B35930F82993F9CE0050B1F3 /* ViewController.swift */,
-				B35930FA2993F9CE0050B1F3 /* Main.storyboard */,
-				B35930FD2993F9CE0050B1F3 /* Assets.xcassets */,
+				B35931082993FA090050B1F3 /* Assets.xcassets */,
 				B35930FF2993F9CE0050B1F3 /* LaunchScreen.storyboard */,
-				B35931022993F9CE0050B1F3 /* Info.plist */,
+				B35930FA2993F9CE0050B1F3 /* Main.storyboard */,
+				B35931172993FA230050B1F3 /* Models */,
+				B35931102993FA230050B1F3 /* Views */,
 			);
 			path = TGO;
+			sourceTree = "<group>";
+		};
+		B35931102993FA230050B1F3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B35931162993FA230050B1F3 /* HeaderView.swift */,
+				B35931112993FA230050B1F3 /* Sidebar */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B35931112993FA230050B1F3 /* Sidebar */ = {
+			isa = PBXGroup;
+			children = (
+				B35931122993FA230050B1F3 /* SidebarView.swift */,
+				B35931132993FA230050B1F3 /* Components */,
+			);
+			path = Sidebar;
+			sourceTree = "<group>";
+		};
+		B35931132993FA230050B1F3 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B35931152993FA230050B1F3 /* SidebarButton.swift */,
+				B35931142993FA230050B1F3 /* SidebarContent.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		B35931172993FA230050B1F3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B35931272993FA230050B1F3 /* NotificationPaneManager.swift */,
+				B359311E2993FA230050B1F3 /* SidebarNavigationManager.swift */,
+				B35931182993FA230050B1F3 /* ThemeEvent.swift */,
+				B35931192993FA230050B1F3 /* Calendar */,
+				B35931232993FA230050B1F3 /* Extensions */,
+				B35931282993FA230050B1F3 /* Outlook */,
+				B359311F2993FA230050B1F3 /* PDVWidget */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B35931192993FA230050B1F3 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				B359311A2993FA230050B1F3 /* CalendarEvents.swift */,
+				B359311D2993FA230050B1F3 /* CalendarManager.swift */,
+				B359311B2993FA230050B1F3 /* CalendarWidget */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		B359311B2993FA230050B1F3 /* CalendarWidget */ = {
+			isa = PBXGroup;
+			children = (
+				B359311C2993FA230050B1F3 /* DropCalendarDelegate.swift */,
+			);
+			path = CalendarWidget;
+			sourceTree = "<group>";
+		};
+		B359311F2993FA230050B1F3 /* PDVWidget */ = {
+			isa = PBXGroup;
+			children = (
+				B35931222993FA230050B1F3 /* DropPDVDelegate.swift */,
+				B35931202993FA230050B1F3 /* PDV.swift */,
+				B35931212993FA230050B1F3 /* PDVWidgetManager.swift */,
+			);
+			path = PDVWidget;
+			sourceTree = "<group>";
+		};
+		B35931232993FA230050B1F3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B35931242993FA230050B1F3 /* StringProtocolExtension.swift */,
+				B35931252993FA230050B1F3 /* UIViewControllerExtension.swift */,
+				B35931262993FA230050B1F3 /* UIViewExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B35931282993FA230050B1F3 /* Outlook */ = {
+			isa = PBXGroup;
+			children = (
+				B359312A2993FA230050B1F3 /* AuthenticationManager.swift */,
+				B35931292993FA230050B1F3 /* GraphManager.swift */,
+				B359312B2993FA230050B1F3 /* MicrosoftLoginController.swift */,
+			);
+			path = Outlook;
+			sourceTree = "<group>";
+		};
+		CB8C622C0879ECE06A89974E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C31EF0446D9CD837034AB7D6 /* Pods-TGO.debug.xcconfig */,
+				85FBDD1A7FF99E5C64FA3D53 /* Pods-TGO.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +236,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B35931052993F9CE0050B1F3 /* Build configuration list for PBXNativeTarget "TGO" */;
 			buildPhases = (
+				40D824421270C143B6876F6E /* [CP] Check Pods Manifest.lock */,
 				B35930ED2993F9CE0050B1F3 /* Sources */,
 				B35930EE2993F9CE0050B1F3 /* Frameworks */,
 				B35930EF2993F9CE0050B1F3 /* Resources */,
+				2A682134AAF36A055CB8F107 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,22 +289,86 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B359310F2993FA1A0050B1F3 /* data-dummy.json in Resources */,
 				B35931012993F9CE0050B1F3 /* LaunchScreen.storyboard in Resources */,
-				B35930FE2993F9CE0050B1F3 /* Assets.xcassets in Resources */,
+				B35931092993FA090050B1F3 /* Assets.xcassets in Resources */,
 				B35930FC2993F9CE0050B1F3 /* Main.storyboard in Resources */,
+				B359310D2993FA1A0050B1F3 /* AuthSettings.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2A682134AAF36A055CB8F107 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TGO/Pods-TGO-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TGO/Pods-TGO-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TGO/Pods-TGO-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		40D824421270C143B6876F6E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TGO-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B35930ED2993F9CE0050B1F3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B35931352993FA230050B1F3 /* PDV.swift in Sources */,
 				B35930F92993F9CE0050B1F3 /* ViewController.swift in Sources */,
+				B35931392993FA230050B1F3 /* UIViewControllerExtension.swift in Sources */,
+				B359312E2993FA230050B1F3 /* SidebarButton.swift in Sources */,
 				B35930F52993F9CE0050B1F3 /* AppDelegate.swift in Sources */,
+				B359312D2993FA230050B1F3 /* SidebarContent.swift in Sources */,
+				B359313C2993FA230050B1F3 /* GraphManager.swift in Sources */,
+				B359313B2993FA230050B1F3 /* NotificationPaneManager.swift in Sources */,
+				B35931342993FA230050B1F3 /* SidebarNavigationManager.swift in Sources */,
+				B359312C2993FA230050B1F3 /* SidebarView.swift in Sources */,
+				B359310E2993FA1A0050B1F3 /* ExampleData.swift in Sources */,
+				B35931312993FA230050B1F3 /* CalendarEvents.swift in Sources */,
+				B35931382993FA230050B1F3 /* StringProtocolExtension.swift in Sources */,
+				B359313D2993FA230050B1F3 /* AuthenticationManager.swift in Sources */,
+				B35931322993FA230050B1F3 /* DropCalendarDelegate.swift in Sources */,
+				B35931372993FA230050B1F3 /* DropPDVDelegate.swift in Sources */,
+				B359313E2993FA230050B1F3 /* MicrosoftLoginController.swift in Sources */,
+				B359313A2993FA230050B1F3 /* UIViewExtension.swift in Sources */,
 				B35930F72993F9CE0050B1F3 /* SceneDelegate.swift in Sources */,
+				B35931362993FA230050B1F3 /* PDVWidgetManager.swift in Sources */,
+				B35931332993FA230050B1F3 /* CalendarManager.swift in Sources */,
+				B35931302993FA230050B1F3 /* ThemeEvent.swift in Sources */,
+				B359312F2993FA230050B1F3 /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +510,7 @@
 		};
 		B35931062993F9CE0050B1F3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C31EF0446D9CD837034AB7D6 /* Pods-TGO.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -295,6 +524,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,6 +540,7 @@
 		};
 		B35931072993F9CE0050B1F3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85FBDD1A7FF99E5C64FA3D53 /* Pods-TGO.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -323,6 +554,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
