@@ -47,9 +47,8 @@ class ViewController: UIViewController {
         
         sidebar.snp.makeConstraints { make in
             make.height.equalToSuperview()
-            make.width.equalToSuperview().multipliedBy(0.06)
+            make.width.equalToSuperview()
         }
-        sidebar.backgroundColor = .red
     }
 }
 

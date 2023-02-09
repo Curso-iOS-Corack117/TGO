@@ -16,7 +16,7 @@ class SidebarContent: UIView {
             SidebarButton(
                 manager: manager,
                 imageName: "material-menu",
-                action: { self.manager.isShowUser.toggle() }
+                action: { self.manager.isOpened.toggle() }
             ),
             UIView(frame: .zero),
             SidebarButton(
@@ -110,8 +110,7 @@ class SidebarContent: UIView {
             make.height.equalToSuperview()
             make.width.equalToSuperview()
         }
-        parentView.backgroundColor = .red
-        vstack.backgroundColor = .white
+        vstack.clipsToBounds = true
     }
 }
 

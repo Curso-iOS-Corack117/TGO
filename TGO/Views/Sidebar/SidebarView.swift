@@ -13,6 +13,13 @@ class SidebarView: UIView {
     lazy var sidebarContent: SidebarContent = {
         return SidebarContent(frame: .zero)
     }()
+    
+    lazy var backgroundView: UIView = {
+        let view = UIView(frame: .zero)
+        view.backgroundColor = .black
+        view.layer.opacity = 0.2
+        return view
+    }()
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -26,11 +33,17 @@ class SidebarView: UIView {
     
     
     private func setupView() {
+        addSubview(backgroundView)
         addSubview(sidebarContent)
+        
+        backgroundView.snp.makeConstraints { make in
+            make.edges.equalToSuperview()
+        }
                 
         sidebarContent.snp.makeConstraints { make in
             make.height.equalToSuperview()
-            make.width.equalToSuperview().multipliedBy(sidebarManager.CLOSED_SIZE)
+            make.width.equalToSuperview()
+                .multipliedBy(sidebarManager.isOpened ? sidebarManager.OPENED_SIZE : sidebarManager.CLOSED_SIZE)
         }
     }
 }

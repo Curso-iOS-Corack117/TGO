@@ -16,16 +16,15 @@ class SidebarButton: UIView {
     var isSystemImage: Bool = false
     
     lazy var image: UIImageView = {
-        var image: UIImage!
+        let imageView = UIImageView()
+        imageView.contentMode = .scaleAspectFit
+        imageView.translatesAutoresizingMaskIntoConstraints = false
         if isSystemImage {
-            image = UIImage(systemName: imageName)
-            image.withRenderingMode(.alwaysOriginal)
+            imageView.image = UIImage(systemName: imageName)!.withRenderingMode(.alwaysOriginal)
         } else {
-            image = UIImage(named: imageName)
+            imageView.image = UIImage(named: imageName)
         }
-        let uiimage = UIImageView(image: image)
-        uiimage.contentMode = .scaleAspectFit
-        return uiimage
+        return imageView
     }()
     
     lazy var titleButton: UILabel = {
@@ -34,6 +33,8 @@ class SidebarButton: UIView {
         titleButton.textAlignment = .right
         titleButton.font = .systemFont(ofSize: 27)
         titleButton.textColor = .black
+//        titleButton.alpha = opacityTitle
+        titleButton.translatesAutoresizingMaskIntoConstraints = false
         return titleButton
     }()
     
@@ -71,16 +72,19 @@ class SidebarButton: UIView {
     }
     
     private func setupView() {
+//        addSubview(image)
+//        addSubview(titleButton)
         addSubview(button)
         
-        image.snp.makeConstraints { make in
-            make.width.equalTo(manager.BUTTON_HEIGHT)
+        button.snp.makeConstraints { make in
+            make.height.equalTo(manager.BUTTON_HEIGHT)
+            
         }
         
-        button.snp.makeConstraints { make in
-            make.width.equalToSuperview()
-            make.height.equalTo(manager.BUTTON_HEIGHT)
+        image.snp.makeConstraints { make in
+            make.height.width.equalTo(manager.BUTTON_HEIGHT)
         }
+//        addTarget(self, action: #selector(actionButton), for: .touchUpInside)
     }
     
     @objc private func actionButton() {
