@@ -8,46 +8,76 @@
 import UIKit
 
 class ViewController: UIViewController {
+    var sidebarManager = SidebarNavigationManager.shared
     
     lazy var sidebar: SidebarView = {
         let sidebar = SidebarView(frame: .zero)
         return sidebar
     }()
     
-    lazy var headerView: HeaderView = {
-        let headerView = HeaderView(frame: .zero)
-        return headerView
+    lazy var bodyView: UIView = {
+        let content = UIView(frame: .zero)
+        return content
     }()
     
-    lazy var textView: UITextView = {
-        let textView = UITextView(frame: .zero)
-        textView.font = UIFont.systemFont(ofSize: 15)
-        textView.contentInset = UIEdgeInsets(top: 8, left: 24, bottom: 8, right: 24)
-        return textView
-    }()
-    
-    lazy var bodyStackView: UIStackView = {
-        let stackView = UIStackView(arrangedSubviews: [headerView, textView])
-        stackView.axis = .horizontal
-        stackView.spacing = 16.0
-        return stackView
-    }()
-    
-    lazy var scrollView: UIScrollView = {
-        let scrollView = UIScrollView()
-        scrollView.contentInset = UIEdgeInsets(top: 8, left: 24, bottom: 8, right: 24)
-        return scrollView
+    lazy var contentView: UIView = {
+        let content = UIView()
+        return content
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let content = contentView
+        let margins = view.layoutMarginsGuide
         
-        view.backgroundColor = .white
-        view.addSubview(sidebar)
+        content.addSubview(bodyView)
+        content.addSubview(sidebar)
+        view.addSubview(content)
+        view.backgroundColor = .gray
+        
+        content.snp.makeConstraints { make in
+            make.top.equalTo(view.safeAreaLayoutGuide.snp.top)
+            make.bottom.leading.trailing.equalToSuperview()
+        }
         
         sidebar.snp.makeConstraints { make in
             make.height.equalToSuperview()
             make.width.equalToSuperview()
+        }
+        
+        bodyView.snp.makeConstraints { make in
+            make.leading.equalTo(sidebarManager.closedWidth)
+            make.trailing.equalToSuperview()
+            make.top.equalToSuperview()
+            make.bottom.equalToSuperview()
+        }
+        
+        updateMainView()
+    }
+    
+    private func updateMainView() {
+        var viewController = UIView(frame: .zero)
+        for v in bodyView.subviews {
+            v.removeFromSuperview()
+        }
+        
+        switch sidebarManager.viewType {
+            case .home:
+                viewController = HomeView(frame: .zero)
+            case .agenda:
+                viewController = HomeView(frame: .zero)
+            case .dashboard:
+                viewController = HomeView(frame: .zero)
+            case .visita_pdv:
+                viewController = HomeView(frame: .zero)
+            case .chat_zeus:
+                viewController = HomeView(frame: .zero)
+            case .ayuda:
+                viewController = HomeView(frame: .zero)
+        }
+        bodyView.addSubview(viewController)
+        viewController.snp.makeConstraints { make in
+            make.width.height.equalToSuperview()
         }
     }
 }

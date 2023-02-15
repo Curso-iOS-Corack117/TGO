@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SidebarButton: UIView {
+class SidebarButton: UIButton {
     var manager: SidebarNavigationManager
     var opacityTitle: Double
     var title: String = ""
@@ -33,7 +33,7 @@ class SidebarButton: UIView {
         titleButton.textAlignment = .right
         titleButton.font = .systemFont(ofSize: 27)
         titleButton.textColor = .black
-//        titleButton.alpha = opacityTitle
+        titleButton.alpha = opacityTitle
         titleButton.translatesAutoresizingMaskIntoConstraints = false
         return titleButton
     }()
@@ -46,8 +46,8 @@ class SidebarButton: UIView {
         stackView.spacing = 16.0
         stackView.alignment = .fill
         // Button Aciton
-        let gesture = UITapGestureRecognizer(target: self, action: #selector(actionButton))
-        stackView.addGestureRecognizer(gesture)
+//        let gesture = UITapGestureRecognizer(target: self, action: #selector(actionButton))
+//        stackView.addGestureRecognizer(gesture)
         stackView.clipsToBounds = true
         return stackView
     }()
@@ -72,19 +72,29 @@ class SidebarButton: UIView {
     }
     
     private func setupView() {
-//        addSubview(image)
-//        addSubview(titleButton)
-        addSubview(button)
+        addSubview(image)
+        addSubview(titleButton)
+//        addSubview(button)
         
-        button.snp.makeConstraints { make in
-            make.height.equalTo(manager.BUTTON_HEIGHT)
-            
-        }
+//        button.snp.makeConstraints { make in
+//            make.height.equalTo(manager.BUTTON_HEIGHT)
+//
+//        }
         
         image.snp.makeConstraints { make in
             make.height.width.equalTo(manager.BUTTON_HEIGHT)
+            make.centerY.equalToSuperview()
+            if !manager.isOpened {
+                make.centerX.equalToSuperview()
+            }
         }
-//        addTarget(self, action: #selector(actionButton), for: .touchUpInside)
+        
+        titleButton.snp.makeConstraints { make in
+            make.trailing.equalToSuperview()
+            make.centerY.equalToSuperview()
+        }
+        
+        addTarget(self, action: #selector(actionButton), for: .touchUpInside)
     }
     
     @objc private func actionButton() {

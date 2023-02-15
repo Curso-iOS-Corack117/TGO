@@ -17,6 +17,21 @@ class CalendarManager {
         self.fetchData()
     }
     
+    static func getWeekOfYear() -> String {
+        let week = Calendar.current.component(.weekOfYear, from: Date(timeIntervalSinceNow: 0))
+        return "Sem \(week)"
+    }
+    
+    static func getDayOfWeek(of date: Date) -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "d 'de' MMM 'de' YYYY"
+        return dateFormatter.string(from: date)
+    }
+    
+    static func headerDate(of date: Date) -> String {
+        return "\(getWeekOfYear()) / \(getDayOfWeek(of: date))"
+    }
+    
     func fetchData() {
         guard let url = Bundle.main.url(forResource: "data-dummy", withExtension: "json") else {
             return

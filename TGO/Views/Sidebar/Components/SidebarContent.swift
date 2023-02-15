@@ -101,7 +101,7 @@ class SidebarContent: UIView {
         addSubview(parentView)
         
         vstack.snp.makeConstraints { make in
-            make.margins.equalToSuperview().inset(10)
+            make.margins.equalToSuperview()
             make.width.greaterThanOrEqualTo(manager.BUTTON_HEIGHT)
         }
         
@@ -109,6 +109,7 @@ class SidebarContent: UIView {
         parentView.snp.makeConstraints { make in
             make.height.equalToSuperview()
             make.width.equalToSuperview()
+            make.centerX.equalToSuperview()
         }
         vstack.clipsToBounds = true
     }

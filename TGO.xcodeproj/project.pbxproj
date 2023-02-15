@@ -35,6 +35,31 @@
 		B359313C2993FA230050B1F3 /* GraphManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35931292993FA230050B1F3 /* GraphManager.swift */; };
 		B359313D2993FA230050B1F3 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B359312A2993FA230050B1F3 /* AuthenticationManager.swift */; };
 		B359313E2993FA230050B1F3 /* MicrosoftLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B359312B2993FA230050B1F3 /* MicrosoftLoginController.swift */; };
+		B3C615C4299BE7A30092DE74 /* HelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C615A1299BE7A00092DE74 /* HelpView.swift */; };
+		B3C615C5299BE7A30092DE74 /* NotificationPaneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C615A3299BE7A10092DE74 /* NotificationPaneView.swift */; };
+		B3C615C6299BE7A30092DE74 /* NotificationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C615A5299BE7A10092DE74 /* NotificationListView.swift */; };
+		B3C615C7299BE7A30092DE74 /* NotificationCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C615A6299BE7A10092DE74 /* NotificationCellView.swift */; };
+		B3C615C8299BE7A30092DE74 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C615A8299BE7A10092DE74 /* ChatView.swift */; };
+		B3C615C9299BE7A30092DE74 /* AgendaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C615AA299BE7A20092DE74 /* AgendaView.swift */; };
+		B3C615CA299BE7A30092DE74 /* PDVWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C615AC299BE7A20092DE74 /* PDVWidgetView.swift */; };
+		B3C615CB299BE7A30092DE74 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C615AD299BE7A20092DE74 /* HomeView.swift */; };
+		B3C615CC299BE7A30092DE74 /* CalendarWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C615AE299BE7A20092DE74 /* CalendarWidget.swift */; };
+		B3C615CD299BE7A30092DE74 /* CalendarHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C615B1299BE7A20092DE74 /* CalendarHeaderView.swift */; };
+		B3C615CE299BE7A30092DE74 /* TimelineEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C615B2299BE7A20092DE74 /* TimelineEventView.swift */; };
+		B3C615CF299BE7A30092DE74 /* CalendarBodyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C615B3299BE7A20092DE74 /* CalendarBodyView.swift */; };
+		B3C615D0299BE7A30092DE74 /* TimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C615B4299BE7A20092DE74 /* TimelineView.swift */; };
+		B3C615D1299BE7A30092DE74 /* TimelineHourView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C615B5299BE7A20092DE74 /* TimelineHourView.swift */; };
+		B3C615D2299BE7A30092DE74 /* PDVCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C615B7299BE7A20092DE74 /* PDVCardView.swift */; };
+		B3C615D3299BE7A30092DE74 /* GerenteResumeWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C615B8299BE7A20092DE74 /* GerenteResumeWidget.swift */; };
+		B3C615D4299BE7A30092DE74 /* AcuerdosCircleWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C615B9299BE7A20092DE74 /* AcuerdosCircleWidget.swift */; };
+		B3C615D5299BE7A30092DE74 /* HealthStatusWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C615BA299BE7A20092DE74 /* HealthStatusWidget.swift */; };
+		B3C615D6299BE7A30092DE74 /* ORCWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C615BB299BE7A20092DE74 /* ORCWidget.swift */; };
+		B3C615D7299BE7A30092DE74 /* SortIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C615BD299BE7A30092DE74 /* SortIcon.swift */; };
+		B3C615D8299BE7A30092DE74 /* JustifiedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C615BE299BE7A30092DE74 /* JustifiedText.swift */; };
+		B3C615D9299BE7A30092DE74 /* GeometryStackReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C615BF299BE7A30092DE74 /* GeometryStackReader.swift */; };
+		B3C615DA299BE7A30092DE74 /* VisitaPDVView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C615C1299BE7A30092DE74 /* VisitaPDVView.swift */; };
+		B3C615DB299BE7A30092DE74 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C615C3299BE7A30092DE74 /* DashboardView.swift */; };
+		B3C615DD299BF17D0092DE74 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C615DC299BF17D0092DE74 /* DateExtension.swift */; };
 		F7E7004E05C35C785AB75A2C /* Pods_TGO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB06D5DE57F738734C78C5C5 /* Pods_TGO.framework */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +95,31 @@
 		B35931292993FA230050B1F3 /* GraphManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphManager.swift; sourceTree = "<group>"; };
 		B359312A2993FA230050B1F3 /* AuthenticationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
 		B359312B2993FA230050B1F3 /* MicrosoftLoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MicrosoftLoginController.swift; sourceTree = "<group>"; };
+		B3C615A1299BE7A00092DE74 /* HelpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpView.swift; sourceTree = "<group>"; };
+		B3C615A3299BE7A10092DE74 /* NotificationPaneView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationPaneView.swift; sourceTree = "<group>"; };
+		B3C615A5299BE7A10092DE74 /* NotificationListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationListView.swift; sourceTree = "<group>"; };
+		B3C615A6299BE7A10092DE74 /* NotificationCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationCellView.swift; sourceTree = "<group>"; };
+		B3C615A8299BE7A10092DE74 /* ChatView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		B3C615AA299BE7A20092DE74 /* AgendaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgendaView.swift; sourceTree = "<group>"; };
+		B3C615AC299BE7A20092DE74 /* PDVWidgetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDVWidgetView.swift; sourceTree = "<group>"; };
+		B3C615AD299BE7A20092DE74 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		B3C615AE299BE7A20092DE74 /* CalendarWidget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarWidget.swift; sourceTree = "<group>"; };
+		B3C615B1299BE7A20092DE74 /* CalendarHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarHeaderView.swift; sourceTree = "<group>"; };
+		B3C615B2299BE7A20092DE74 /* TimelineEventView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineEventView.swift; sourceTree = "<group>"; };
+		B3C615B3299BE7A20092DE74 /* CalendarBodyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarBodyView.swift; sourceTree = "<group>"; };
+		B3C615B4299BE7A20092DE74 /* TimelineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineView.swift; sourceTree = "<group>"; };
+		B3C615B5299BE7A20092DE74 /* TimelineHourView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineHourView.swift; sourceTree = "<group>"; };
+		B3C615B7299BE7A20092DE74 /* PDVCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDVCardView.swift; sourceTree = "<group>"; };
+		B3C615B8299BE7A20092DE74 /* GerenteResumeWidget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GerenteResumeWidget.swift; sourceTree = "<group>"; };
+		B3C615B9299BE7A20092DE74 /* AcuerdosCircleWidget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcuerdosCircleWidget.swift; sourceTree = "<group>"; };
+		B3C615BA299BE7A20092DE74 /* HealthStatusWidget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthStatusWidget.swift; sourceTree = "<group>"; };
+		B3C615BB299BE7A20092DE74 /* ORCWidget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ORCWidget.swift; sourceTree = "<group>"; };
+		B3C615BD299BE7A30092DE74 /* SortIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SortIcon.swift; sourceTree = "<group>"; };
+		B3C615BE299BE7A30092DE74 /* JustifiedText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JustifiedText.swift; sourceTree = "<group>"; };
+		B3C615BF299BE7A30092DE74 /* GeometryStackReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeometryStackReader.swift; sourceTree = "<group>"; };
+		B3C615C1299BE7A30092DE74 /* VisitaPDVView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisitaPDVView.swift; sourceTree = "<group>"; };
+		B3C615C3299BE7A30092DE74 /* DashboardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		B3C615DC299BF17D0092DE74 /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		C31EF0446D9CD837034AB7D6 /* Pods-TGO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TGO.debug.xcconfig"; path = "Target Support Files/Pods-TGO/Pods-TGO.debug.xcconfig"; sourceTree = "<group>"; };
 		CB06D5DE57F738734C78C5C5 /* Pods_TGO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TGO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -135,7 +185,15 @@
 			isa = PBXGroup;
 			children = (
 				B35931162993FA230050B1F3 /* HeaderView.swift */,
+				B3C615A9299BE7A20092DE74 /* Agenda */,
+				B3C615A0299BE7A00092DE74 /* Ayuda */,
+				B3C615A7299BE7A10092DE74 /* Chat */,
+				B3C615C2299BE7A30092DE74 /* Dashboard */,
+				B3C615AB299BE7A20092DE74 /* Home */,
+				B3C615A2299BE7A10092DE74 /* NotificationPane */,
+				B3C615BC299BE7A30092DE74 /* Shared */,
 				B35931112993FA230050B1F3 /* Sidebar */,
+				B3C615C0299BE7A30092DE74 /* VisitaPDV */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -203,6 +261,7 @@
 		B35931232993FA230050B1F3 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				B3C615DC299BF17D0092DE74 /* DateExtension.swift */,
 				B35931242993FA230050B1F3 /* StringProtocolExtension.swift */,
 				B35931252993FA230050B1F3 /* UIViewControllerExtension.swift */,
 				B35931262993FA230050B1F3 /* UIViewExtension.swift */,
@@ -218,6 +277,118 @@
 				B359312B2993FA230050B1F3 /* MicrosoftLoginController.swift */,
 			);
 			path = Outlook;
+			sourceTree = "<group>";
+		};
+		B3C615A0299BE7A00092DE74 /* Ayuda */ = {
+			isa = PBXGroup;
+			children = (
+				B3C615A1299BE7A00092DE74 /* HelpView.swift */,
+			);
+			path = Ayuda;
+			sourceTree = "<group>";
+		};
+		B3C615A2299BE7A10092DE74 /* NotificationPane */ = {
+			isa = PBXGroup;
+			children = (
+				B3C615A3299BE7A10092DE74 /* NotificationPaneView.swift */,
+				B3C615A4299BE7A10092DE74 /* Components */,
+			);
+			path = NotificationPane;
+			sourceTree = "<group>";
+		};
+		B3C615A4299BE7A10092DE74 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B3C615A5299BE7A10092DE74 /* NotificationListView.swift */,
+				B3C615A6299BE7A10092DE74 /* NotificationCellView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		B3C615A7299BE7A10092DE74 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				B3C615A8299BE7A10092DE74 /* ChatView.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		B3C615A9299BE7A20092DE74 /* Agenda */ = {
+			isa = PBXGroup;
+			children = (
+				B3C615AA299BE7A20092DE74 /* AgendaView.swift */,
+			);
+			path = Agenda;
+			sourceTree = "<group>";
+		};
+		B3C615AB299BE7A20092DE74 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B3C615AC299BE7A20092DE74 /* PDVWidgetView.swift */,
+				B3C615AD299BE7A20092DE74 /* HomeView.swift */,
+				B3C615AE299BE7A20092DE74 /* CalendarWidget.swift */,
+				B3C615AF299BE7A20092DE74 /* Components */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B3C615AF299BE7A20092DE74 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B3C615B0299BE7A20092DE74 /* Calendar */,
+				B3C615B6299BE7A20092DE74 /* PDVCard */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		B3C615B0299BE7A20092DE74 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				B3C615B1299BE7A20092DE74 /* CalendarHeaderView.swift */,
+				B3C615B2299BE7A20092DE74 /* TimelineEventView.swift */,
+				B3C615B3299BE7A20092DE74 /* CalendarBodyView.swift */,
+				B3C615B4299BE7A20092DE74 /* TimelineView.swift */,
+				B3C615B5299BE7A20092DE74 /* TimelineHourView.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		B3C615B6299BE7A20092DE74 /* PDVCard */ = {
+			isa = PBXGroup;
+			children = (
+				B3C615B7299BE7A20092DE74 /* PDVCardView.swift */,
+				B3C615B8299BE7A20092DE74 /* GerenteResumeWidget.swift */,
+				B3C615B9299BE7A20092DE74 /* AcuerdosCircleWidget.swift */,
+				B3C615BA299BE7A20092DE74 /* HealthStatusWidget.swift */,
+				B3C615BB299BE7A20092DE74 /* ORCWidget.swift */,
+			);
+			path = PDVCard;
+			sourceTree = "<group>";
+		};
+		B3C615BC299BE7A30092DE74 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				B3C615BD299BE7A30092DE74 /* SortIcon.swift */,
+				B3C615BE299BE7A30092DE74 /* JustifiedText.swift */,
+				B3C615BF299BE7A30092DE74 /* GeometryStackReader.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		B3C615C0299BE7A30092DE74 /* VisitaPDV */ = {
+			isa = PBXGroup;
+			children = (
+				B3C615C1299BE7A30092DE74 /* VisitaPDVView.swift */,
+			);
+			path = VisitaPDV;
+			sourceTree = "<group>";
+		};
+		B3C615C2299BE7A30092DE74 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				B3C615C3299BE7A30092DE74 /* DashboardView.swift */,
+			);
+			path = Dashboard;
 			sourceTree = "<group>";
 		};
 		CB8C622C0879ECE06A89974E /* Pods */ = {
@@ -349,24 +520,49 @@
 				B35931352993FA230050B1F3 /* PDV.swift in Sources */,
 				B35930F92993F9CE0050B1F3 /* ViewController.swift in Sources */,
 				B35931392993FA230050B1F3 /* UIViewControllerExtension.swift in Sources */,
+				B3C615D2299BE7A30092DE74 /* PDVCardView.swift in Sources */,
 				B359312E2993FA230050B1F3 /* SidebarButton.swift in Sources */,
+				B3C615C8299BE7A30092DE74 /* ChatView.swift in Sources */,
 				B35930F52993F9CE0050B1F3 /* AppDelegate.swift in Sources */,
 				B359312D2993FA230050B1F3 /* SidebarContent.swift in Sources */,
+				B3C615D0299BE7A30092DE74 /* TimelineView.swift in Sources */,
+				B3C615D9299BE7A30092DE74 /* GeometryStackReader.swift in Sources */,
+				B3C615D7299BE7A30092DE74 /* SortIcon.swift in Sources */,
+				B3C615D3299BE7A30092DE74 /* GerenteResumeWidget.swift in Sources */,
 				B359313C2993FA230050B1F3 /* GraphManager.swift in Sources */,
 				B359313B2993FA230050B1F3 /* NotificationPaneManager.swift in Sources */,
 				B35931342993FA230050B1F3 /* SidebarNavigationManager.swift in Sources */,
+				B3C615D8299BE7A30092DE74 /* JustifiedText.swift in Sources */,
 				B359312C2993FA230050B1F3 /* SidebarView.swift in Sources */,
+				B3C615D1299BE7A30092DE74 /* TimelineHourView.swift in Sources */,
 				B359310E2993FA1A0050B1F3 /* ExampleData.swift in Sources */,
 				B35931312993FA230050B1F3 /* CalendarEvents.swift in Sources */,
+				B3C615D5299BE7A30092DE74 /* HealthStatusWidget.swift in Sources */,
+				B3C615CC299BE7A30092DE74 /* CalendarWidget.swift in Sources */,
+				B3C615CA299BE7A30092DE74 /* PDVWidgetView.swift in Sources */,
+				B3C615DB299BE7A30092DE74 /* DashboardView.swift in Sources */,
+				B3C615C9299BE7A30092DE74 /* AgendaView.swift in Sources */,
+				B3C615DD299BF17D0092DE74 /* DateExtension.swift in Sources */,
+				B3C615CD299BE7A30092DE74 /* CalendarHeaderView.swift in Sources */,
 				B35931382993FA230050B1F3 /* StringProtocolExtension.swift in Sources */,
+				B3C615CB299BE7A30092DE74 /* HomeView.swift in Sources */,
+				B3C615C4299BE7A30092DE74 /* HelpView.swift in Sources */,
 				B359313D2993FA230050B1F3 /* AuthenticationManager.swift in Sources */,
 				B35931322993FA230050B1F3 /* DropCalendarDelegate.swift in Sources */,
+				B3C615CE299BE7A30092DE74 /* TimelineEventView.swift in Sources */,
 				B35931372993FA230050B1F3 /* DropPDVDelegate.swift in Sources */,
+				B3C615C6299BE7A30092DE74 /* NotificationListView.swift in Sources */,
 				B359313E2993FA230050B1F3 /* MicrosoftLoginController.swift in Sources */,
+				B3C615C5299BE7A30092DE74 /* NotificationPaneView.swift in Sources */,
 				B359313A2993FA230050B1F3 /* UIViewExtension.swift in Sources */,
 				B35930F72993F9CE0050B1F3 /* SceneDelegate.swift in Sources */,
+				B3C615DA299BE7A30092DE74 /* VisitaPDVView.swift in Sources */,
+				B3C615D6299BE7A30092DE74 /* ORCWidget.swift in Sources */,
+				B3C615D4299BE7A30092DE74 /* AcuerdosCircleWidget.swift in Sources */,
 				B35931362993FA230050B1F3 /* PDVWidgetManager.swift in Sources */,
+				B3C615C7299BE7A30092DE74 /* NotificationCellView.swift in Sources */,
 				B35931332993FA230050B1F3 /* CalendarManager.swift in Sources */,
+				B3C615CF299BE7A30092DE74 /* CalendarBodyView.swift in Sources */,
 				B35931302993FA230050B1F3 /* ThemeEvent.swift in Sources */,
 				B359312F2993FA230050B1F3 /* HeaderView.swift in Sources */,
 			);
